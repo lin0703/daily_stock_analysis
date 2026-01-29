@@ -526,6 +526,7 @@ class GeminiAnalyzer:
             # 从配置获取模型名称
             config = get_config()
             model_name = config.gemini_model
+            logger.info(f"获取gemini_model模型: {model_name}")
             fallback_model = config.gemini_model_fallback
             
             # 不再使用 Google Search Grounding（已知有兼容性问题）
